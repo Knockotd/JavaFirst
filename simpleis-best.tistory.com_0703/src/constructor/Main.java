@@ -24,7 +24,6 @@ public class Main {
 
 		practice3.display();
 		
-		System.out.println("작업을 더 함");
 	}
 
 }
