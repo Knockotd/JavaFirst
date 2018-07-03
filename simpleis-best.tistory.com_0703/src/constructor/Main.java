@@ -23,6 +23,8 @@ public class Main {
 		System.out.println(a);
 
 		practice3.display();
+		
+		System.out.println("작업을 더 함");
 	}
 
 }
