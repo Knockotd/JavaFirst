@@ -26,8 +26,8 @@ public class Main3 {
 			String temp = sc.nextLine();
 			try {
 			x = Integer.parseInt(temp);
-			//정수가 아닌 값을 넣으면 튕길 수도 있다. 이럴 경우 try로 감싸주는 게 좋다.
-			break; //오류 없이 정상 실행되면 break;를 만나서 빠져나갈 수 있다.
+			//정수가 아닌 값을 넣으면 튕길 수도 있습니다. 이럴 경우 try로 감싸주는 게 좋습니다.
+			break; //오류 없이 정상 실행되면 break;를 만나서 빠져나갈 수 있습니다.
 			}
 			catch(Exception e) {
 				System.out.println("정수를 입력하세요.");
