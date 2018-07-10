@@ -2,7 +2,7 @@ package clone_test;
 
 import java.util.Scanner;
 
-public class Exam1 {
+public class homework {
 
 	public static void main(String[] args) {
 		// 금액을 입력받아서 오만원, 만원 짜리를 몇 장 주어야 하는지 계산하는 프로그램을 작성
