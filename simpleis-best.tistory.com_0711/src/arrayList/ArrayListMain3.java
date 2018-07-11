@@ -90,7 +90,7 @@ public class ArrayListMain3 {
 			@Override
 			public int compare(Object o1, Object o2) {
 				Application first = (Application)o1;
-						Application second = (Application)o2;
+				Application second = (Application)o2;
 			return first.getApname().compareTo(second.getApname());
 			}};
 		
