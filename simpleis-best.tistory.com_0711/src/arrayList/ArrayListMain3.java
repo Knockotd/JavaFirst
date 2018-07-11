@@ -14,7 +14,7 @@ public class ArrayListMain3 {
 		alist.add(35);
 		
 		Comparator<Integer>comp = new Comparator() {
-
+			//클래스 없이 인스턴스를 바로 만들 때 이러한 구조가 쓰인다.
 				@Override
 				public int compare(Object o1, Object o2) {
 					Integer first = (Integer)o1;
