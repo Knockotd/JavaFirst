@@ -32,7 +32,7 @@ public class LogTest {
 				//sum = sum + Integer.parseInt(ar[9]);
 
 				//ip별로 트레픽 합계 구하기
-				//힌트 map을 사용
+				//힌트 map을 사용 ;
 				
 			}
 		
