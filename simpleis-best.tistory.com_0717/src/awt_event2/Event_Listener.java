@@ -95,6 +95,7 @@ public class Event_Listener extends Frame {
 				// 체크 박스 선택 여부 가져오기
 				boolean b = cb.getState();
 				ta.append(label + "" + b + "로 변경\n");
+				ta.append(e.getSource());
 
 			}
 		};
