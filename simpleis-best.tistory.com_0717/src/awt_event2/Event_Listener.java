@@ -15,14 +15,14 @@ public class Event_Listener extends Frame {
 
 	public Event_Listener() {
 		setBounds(100, 100, 600, 600);
-		setTitle("ÀÌº¥Æ® ÇÚµé¸µ");
+		setTitle("ì´ë²¤íŠ¸ í•¸ë“¤ë§");
 
-		// Ã¼Å©¹Ú½º
+		// ì²´í¬ë°•ìŠ¤
 
-		// ÆĞ³Î »ı¼º
+		// íŒ¨ë„ ìƒì„±
 		Panel pn = new Panel();
 
-		// Ã¼Å©¹Ú½º »ı¼º
+		// ì²´í¬ë°•ìŠ¤ ìƒì„±
 		Checkbox ckboolean = new Checkbox("boolean");
 		Checkbox ckbyte = new Checkbox("byte");
 		Checkbox ckshort = new Checkbox("short");
@@ -32,7 +32,7 @@ public class Event_Listener extends Frame {
 		Checkbox ckfloat = new Checkbox("float");
 		Checkbox ckdouble = new Checkbox("double");
 
-		// ÆĞ³Î¿¡ Ã¼Å©¹Ú½º ¾ñ±â
+		// íŒ¨ë„ì— ì²´í¬ë°•ìŠ¤ ì–¹ê¸°
 		pn.add(ckboolean);
 		pn.add(ckbyte);
 		pn.add(ckshort);
@@ -42,21 +42,21 @@ public class Event_Listener extends Frame {
 		pn.add(ckfloat);
 		pn.add(ckdouble);
 
-		// ÆĞ³Î ºÏÂÊ¿¡ À§Ä¡
+		// íŒ¨ë„ ë¶ìª½ì— ìœ„ì¹˜
 		add("North", pn);
 
-		// Áß¾Ó ºÎ, TextArea ¹èÄ¡
+		// ì¤‘ì•™ ë¶€, TextArea ë°°ì¹˜
 		TextArea ta = new TextArea(10, 70);
 		add("Center", ta);
 
-		// ÇÏ´Ü ºÎ ÄŞº¸¹Ú½º 2°³ ¹èÄ¡
-		// ÄŞº¸¹Ú½º¿¡ ¹èÄ¡ÇÒ µ¥ÀÌÅÍ ¸¸µé±â
+		// í•˜ë‹¨ ë¶€ ì½¤ë³´ë°•ìŠ¤ 2ê°œ ë°°ì¹˜
+		// ì½¤ë³´ë°•ìŠ¤ì— ë°°ì¹˜í•  ë°ì´í„° ë§Œë“¤ê¸°
 		String[] category = { "Programing", "Database", "IDE", "Framework" };
-		// Ä«Å×°í¸® °³¼ö°¡ 4°³ÀÌ¸é {}°¡ 4°³
+		// ì¹´í…Œê³ ë¦¬ ê°œìˆ˜ê°€ 4ê°œì´ë©´ {}ê°€ 4ê°œ
 		String[][] content = { { "Java", "JavaScript", "swift" }, { "Oracle", "MySQL", "MongoDB" },
 				{ "Eclipse", "Android Studio", "XCode" }, { "Spring", "MyBatis", "Hibernate" } };
 
-		// ÃÊÀÌ½º
+		// ì´ˆì´ìŠ¤
 		Choice cbcategory = new Choice();
 		for (String imsi : category) {
 			cbcategory.add(imsi);
@@ -67,12 +67,12 @@ public class Event_Listener extends Frame {
 			cbcontent.add(imsi);
 		}
 
-		Button bt1 = new Button("¼±ÅÃ");
-		Button bt2 = new Button("Á¾·á");
+		Button bt1 = new Button("ì„ íƒ");
+		Button bt2 = new Button("ì¢…ë£Œ");
 
-		// ÆĞ³Î¿¡ ¹öÆ° ³Ö±â
+		// íŒ¨ë„ì— ë²„íŠ¼ ë„£ê¸°
 
-		// ÆĞ³Î¿¡ ÃÊÀÌ½º ³Ö±â
+		// íŒ¨ë„ì— ì´ˆì´ìŠ¤ ë„£ê¸°
 		Panel southPanel = new Panel();
 		southPanel.add(cbcategory);
 		southPanel.add(cbcontent);
@@ -84,23 +84,23 @@ public class Event_Listener extends Frame {
 
 			@Override
 			public void itemStateChanged(ItemEvent e) {
-				// ÀÌº¥Æ®°¡ ¹ß»ıÇÑ ÀÎ½ºÅÏ½º¸¦ ¿ø·¡ÀÇ ÀÚ·áÇüÀÎ
-				// Checkbox·Î º¯È¯
-				// ÀÌº¥Æ® Ã³¸® ¸Ş¼Òµå¿¡¼­
-				// e.getSource()´Â ÀÌº¥Æ®°¡ ¹ß»ıÇÑ
-				// ÀÎ½ºÅÏ½ºÀÇ ÁÖ¼Ò¸¦ ¸®ÅÏÇÕ´Ï´Ù.
+				// ì´ë²¤íŠ¸ê°€ ë°œìƒí•œ ì¸ìŠ¤í„´ìŠ¤ë¥¼ ì›ë˜ì˜ ìë£Œí˜•ì¸
+				// Checkboxë¡œ ë³€í™˜
+				// ì´ë²¤íŠ¸ ì²˜ë¦¬ ë©”ì†Œë“œì—ì„œ
+				// e.getSource()ëŠ” ì´ë²¤íŠ¸ê°€ ë°œìƒí•œ
+				// ì¸ìŠ¤í„´ìŠ¤ì˜ ì£¼ì†Œë¥¼ ë¦¬í„´í•©ë‹ˆë‹¤.
 				Checkbox cb = (Checkbox) (e.getSource());
-				// Ã¼Å© ¹Ú½º¿¡ ÀÔ·ÂµÈ ÅØ½ºÆ® °¡Á®¿À±â
+				// ì²´í¬ ë°•ìŠ¤ì— ì…ë ¥ëœ í…ìŠ¤íŠ¸ ê°€ì ¸ì˜¤ê¸°
 				String label = cb.getLabel();
-				// Ã¼Å© ¹Ú½º ¼±ÅÃ ¿©ºÎ °¡Á®¿À±â
+				// ì²´í¬ ë°•ìŠ¤ ì„ íƒ ì—¬ë¶€ ê°€ì ¸ì˜¤ê¸°
 				boolean b = cb.getState();
-				ta.append(label + "" + b + "·Î º¯°æ\n");
-				ta.append(e.getSource());
+				ta.append(label + "" + b + "ë¡œ ë³€ê²½\n");
+				//ta.append(e.getSource());
 
 			}
 		};
 
-		// Ã¼Å©¹Ú½º¸¦ ´­·¶À» ¶§ È£ÃâµÉ ÀÎ½ºÅÏ½º ¼³Á¤
+		// ì²´í¬ë°•ìŠ¤ë¥¼ ëˆŒë €ì„ ë•Œ í˜¸ì¶œë  ì¸ìŠ¤í„´ìŠ¤ ì„¤ì •
 		ckboolean.addItemListener(itemHandler1);
 		ckbyte.addItemListener(itemHandler1);
 		ckshort.addItemListener(itemHandler1);
@@ -110,44 +110,44 @@ public class Event_Listener extends Frame {
 		ckfloat.addItemListener(itemHandler1);
 		ckdouble.addItemListener(itemHandler1);
 		
-		// Ä«Å×°í¸® ÄŞº¸¹Ú½ºÀÇ ¼±ÅÃÀÌ º¯°æµÇ¾úÀ» ¶§
-		// È£ÃâµÉ ¸Ş¼Òµå¸¦ °¡Áø ¸®½º³Ê
-		// ¾ÆÀÌÅÛ¸®½º³Ê°¡ Ã³¸®
+		// ì¹´í…Œê³ ë¦¬ ì½¤ë³´ë°•ìŠ¤ì˜ ì„ íƒì´ ë³€ê²½ë˜ì—ˆì„ ë•Œ
+		// í˜¸ì¶œë  ë©”ì†Œë“œë¥¼ ê°€ì§„ ë¦¬ìŠ¤ë„ˆ
+		// ì•„ì´í…œë¦¬ìŠ¤ë„ˆê°€ ì²˜ë¦¬
 		ItemListener itemHandler2 = new ItemListener() {
 
 			@Override
 			public void itemStateChanged(ItemEvent e) {
-				// categoryÀÇ ¼±ÅÃµÈ Çà ¹øÈ£ °¡Á®¿À±â
+				// categoryì˜ ì„ íƒëœ í–‰ ë²ˆí˜¸ ê°€ì ¸ì˜¤ê¸°
 				int row = cbcategory.getSelectedIndex();
-				// cbcontentÀÇ ³»¿ëÀ» ÀüºÎ »èÁ¦
+				// cbcontentì˜ ë‚´ìš©ì„ ì „ë¶€ ì‚­ì œ
 				cbcontent.removeAll();
-				//Çà¹øÈ£¿¡ ÇØ´çÇÏ´Â ¼¼ºÎ ³»¿ëÀ» cbcontent¿¡ Ãß°¡
+				//í–‰ë²ˆí˜¸ì— í•´ë‹¹í•˜ëŠ” ì„¸ë¶€ ë‚´ìš©ì„ cbcontentì— ì¶”ê°€
 				for(String temp : content[row]) {
 					cbcontent.add(temp);
 				}
 			}
 		};
-		// ¿¬°á
+		// ì—°ê²°
 		cbcategory.addItemListener(itemHandler2);
 
 		ActionListener action1 = new ActionListener() {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// categoryÀÇ ¼±ÅÃµÈ Çà ¹øÈ£ °¡Á®¿À±â
+				// categoryì˜ ì„ íƒëœ í–‰ ë²ˆí˜¸ ê°€ì ¸ì˜¤ê¸°
 				int caNum = cbcategory.getSelectedIndex();
 				int coNum = cbcontent.getSelectedIndex();
 				String categoryText = category[caNum];
 				String contentText = content[caNum][coNum];
 				ta.setText(categoryText+":"+contentText);
-				//append-Ãß°¡
-				//setText-µ¤¾î¾º¿ì±â
+				//append-ì¶”ê°€
+				//setText-ë®ì–´ì”Œìš°ê¸°
 			}};
 		
 		bt1.addActionListener(action1);
 		
 		
-		//Á¾·á ¹öÆ°À» ´©¸£¸é ÇÁ·Î±×·¥ Á¾·á(System.exit(0))
+		//ì¢…ë£Œ ë²„íŠ¼ì„ ëˆ„ë¥´ë©´ í”„ë¡œê·¸ë¨ ì¢…ë£Œ(System.exit(0))
 		ActionListener action2 = new ActionListener() {
 
 			@Override
@@ -156,7 +156,7 @@ public class Event_Listener extends Frame {
 			}
 			
 		};
-		//¿¬°á
+		//ì—°ê²°
 		bt2.addActionListener(action2);
 		
 		setVisible(true);
